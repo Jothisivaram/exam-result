@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Examination Results</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f4f7;
+      margin: 0;
+      padding: 0;
+    }
+    .card {
+      max-width: 420px;
+      margin: 60px auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 24px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 20px;
+      margin-bottom: 16px;
+      color: #333;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #1a73e8;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    button:hover { background: #1558b0; }
+    .result {
+      display: none;
+      margin-top: 20px;
+      font-size: 22px;
+      color: #d6336c;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>University Examination Results</h1>
+    <input type="text" placeholder="Register Number" />
+    <input type="text" placeholder="Date of Birth" />
+    <button onclick="showResult()">Get Result</button><div class="result" id="prankResult">🎄 Happy Christmas 🎄</div>
+
+  </div>  <script>
+    function showResult() {
+      document.getElementById('prankResult').style.display = 'block';
+    }
+  </script></body>
+</html>
